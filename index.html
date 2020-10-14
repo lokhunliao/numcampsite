@@ -33,7 +33,8 @@
             </div> 
                 <div class="col-md-2 col-xl-2 mt-4">
                     <!-- <a href="#reserveForm"> <button class="btn btn-info btn-lg">Reserve campsite</button></a> another way to do it-->
-                    <a href="#reserveForm" rold="button" class="btn btn-info btn-lg">Reserve campsite</a>
+                    <a href="#reserveForm" rold="button" class="btn btn-info btn-lg" data-target="tooltip" data-replacement="bottom"
+                    data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve campsite</a>
                 </div>   
             </div>
         </div>
@@ -178,6 +179,13 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function (){
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
 
 </body>
 
