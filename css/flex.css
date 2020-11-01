@@ -1,0 +1,35 @@
+.main{
+    border: 1px solid #000;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color: black;
+    font-size: 30px;
+}
+
+.left{
+    width: 48%;
+    float: left;
+}
+.right{
+    width: 48%;
+    float: right;
+}
+.clear{
+    clear: both;
+}
+
+.main1{
+ padding: 20px;
+ display: flex;
+}
+
+.left1{
+  flex: 1;
+}
+.right1{
+    flex: 2;
+}
+.clear1{
+    clear: 1;
+}

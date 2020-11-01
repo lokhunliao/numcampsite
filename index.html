@@ -6,14 +6,22 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-        <!-- Bootstrap CSS -->
+        <!-- Bootstrap CSS
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        Additional CSS must be placed after Bootstrap CSS
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="css/style.css" /> -->
+
+        <!-- build:css css/main.css -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <!-- endbuild -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
         
         <title>NuCamp: A Better Way To Camp</title>
     </head>
@@ -34,7 +42,8 @@
                     <!-- <a href="#reserveForm"> <button class="btn btn-info btn-lg">Reserve campsite</button></a> another way to do it-->
                     <!-- <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip" data-placement="bottom" 
                     data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a> (tooltip)-->
-                    <button type="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</button>
+                    <!-- <button type="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</button> -->
+                    <button type="button" class="btn btn-lg btn-info" id="reserveButton">Reserve Campsite</button>
                 </div>   
             </div>
         </div>
@@ -95,7 +104,7 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top"> 
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top "> 
         <div class="container">
             <a class="nav-brand" href="#"><img src="img/logo.png" 
                 height="30" width="30"/> </a>
@@ -110,7 +119,9 @@
                     <li class="nab-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <!-- <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login -->
+                    <a role="button" id="loginButton">
                         <i class="fa fa-sign-in"></i> Login
                     </a>
                 </span>
@@ -327,17 +338,24 @@
         </div>
     </footer>
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
     <!-- <script>
         $(function (){
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script> (tooltip)-->
-<!-- 
+    <!-- 
         <script>  two btns for pause and play 
             $(function() {
                 $(".carousel").carousel( { interval: 2000} );
@@ -350,8 +368,8 @@
             });
         </script> -->
 
-        <script src="js/scripts.js"></script>
 
 </body>
+
 
 </html>

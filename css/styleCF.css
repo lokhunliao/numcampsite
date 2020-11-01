@@ -1,0 +1,146 @@
+*{
+    /* border: black solid 1px; */
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montaga', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2{ 
+    display:flex;
+    justify-content: center;
+}
+
+
+#h1Color{
+    font-family: "open Sans";
+    color: #30C2FF;
+}
+
+.h4{
+    font-weight: 500;
+    display:flex;
+    justify-content: center;
+}
+
+.navbar{
+    position: relative;
+    right: 100px;
+}
+
+.nav-item{
+    font-size: 19px;
+    border-right: black 0.5px;
+    font-family:"Montserrat";
+}
+
+#navColorBlue{
+    color: #0E6386;
+}
+
+#noodleRoll{
+    position: relative;
+    bottom:0px;
+    left: 250px;
+    z-index:-1;
+}
+
+#healthy{
+    font-size: 3rem;
+    position: relative;
+    left:900px;
+}
+
+.card-text{
+    font-family: 'Montaga';
+    font-size: 24px;
+}
+
+.card{
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+#square{
+    position: relative;
+    left: 80px;
+    z-index:-1;
+}
+
+#paragraphHeader{
+    -webkit-text-stroke: 1px #30C2FF;
+    text-align: left;
+    color:#30C2FF;
+    position: relative;
+    left: 150px;
+    bottom: 50px;
+}
+
+#paragraph1{
+    text-align: center;
+    position: relative;
+    right: 150px;
+}
+
+#paragraph2{
+    background-image: url('../img/background.jpg');
+    height: 500px;
+    text-align: center;
+    position: relative;
+    
+}
+
+#paragraph3{
+    text-align: center;
+    position: relative;
+
+}
+
+#header2{
+    -webkit-text-stroke: 1px #30C2FF;
+    text-align: center;
+    color:#30C2FF;
+    position: relative;
+    left: 150px;
+
+}
+
+#bg{
+    z-index:-1;
+    position: relative;
+    bottom: 510px;
+    left: 240px;
+    z-index:-1;
+}
+
+#authentic{
+    font-size: 4rem;
+    position: relative;
+    top: 380px;
+    right:450px;
+}
+
+
+#btn{
+    font-size: 1.5rem;
+    background-color: #30C2FF;
+    color: white;
+    border-radius: 30px;
+    position: relative;
+    left:0px;
+    bottom:5px;
+}
+
+#partThree{
+    background-color: #F4F5F2;
+
+}
+
+.site-footer{
+    background-image: linear-gradient(to bottom, #F1F1F1,  white);
+}
+
+#Contact{
+    position: relative;
+    left:50px;
+}

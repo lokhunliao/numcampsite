@@ -1,0 +1,259 @@
+$blue: #30C2FF;
+
+@mixin button() {
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    color:$blue;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        background-color: $blue;
+        color: white;
+        height: 100%;
+        width: 0%;
+        transition: .2s;
+        z-index: -1;
+    }
+
+    &:hover::before{
+        width: 100%;
+    }
+}
+
+@mixin  heading() {
+    font-size: 4rem;
+    color: black;
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+
+    span{
+        color: $blue;
+    }
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Montaga', serif;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow:scroll
+}
+
+div{
+    h1,h2{ 
+    font-size: 35px;
+    display:flex;
+    justify-content: center;
+    }
+}
+
+.h4{
+    font-size: 25px;
+    font-weight: 500;
+    display:flex;
+    justify-content: center;
+}
+
+
+
+#h1Color{
+    font-family: "open Sans";
+    color:$blue;
+}
+
+.h4{
+    font-weight: 500;
+    display:flex;
+    justify-content: center;
+}
+
+#header{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 4rem;
+    z-index: 1000;
+
+    .fa-bars{
+        font-size: 4rem;
+        z-index: 1000;
+        color: $blue;
+        cursor: pointer;
+        display: none;
+    }
+
+    .logo{
+        img{
+            height: 5rem;
+        }
+    }
+
+    nav{
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;
+
+            li{
+                margin-right:4rem;
+
+                a{
+                    color: black;
+                    font-size: 1.6rem;
+
+                    &:hover{
+                        color: $blue;
+                        text-decoration: underline ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#home{
+    position: relative;
+
+    .content{
+
+        h1{
+            font-size: 5rem;
+            font-weight: bolder;
+            position: relative;
+            bottom:500px; left: 370px;
+        }
+
+        h2{
+            font-size: 6rem;
+            font-weight: bolder;
+            position: relative;
+            bottom:120px; left: -60px;
+        }
+        button{
+            @include button();
+            height: 4rem;
+            width: 14rem;
+            background: white;
+            color: black;
+            position: absolute;
+            bottom:200%;
+            left: 65%;
+        }
+    }
+}
+
+section{
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+    }
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+
+//media queries
+@media (max-width:768px){
+    #header{
+        font-size: 50%;
+    }
+
+        .fa-bars{
+            display: block;
+        }
+
+        nav{
+            position: fixed;
+            top: 0; 
+            left: -120%;
+            height: 100vh;
+            width: 35rem;
+            background: white;
+
+            ul{
+                flex-flow: column;
+                justify-content: center;
+                height: 100%;
+
+                li{
+                    margin: 2rem 0;
+
+                    a{
+                        margin-top: 20px;
+                        font-size: 2rem;
+                        border-radius: 5rem;
+
+                        &:hover{
+                            padding: .5rem 7.5rem;
+                            color:white;
+                            background: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+            .nav-toggle{
+                left: 0%;
+            }
+        }
+
+
+#special{
+    background: #000;
+    min-height: 100vh;
+
+    .heading{
+        
+        h1{
+            font-size: 4rem;
+            color: black;
+            padding-top: 7rem;
+            margin-bottom: 2rem;
+
+            span{
+                color: $blue;
+            }
+        }
+    }
+}
+
+// menu section
+#menu {
+    min-width: 100vh;
+    width: 100vw;
+}
+
+#menu .heading{
+    h1{
+        
+    }
+}
